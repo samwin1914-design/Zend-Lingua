@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536" role="img" aria-label="Zend Lingua master logo">
+  <defs>
+    <linearGradient id="zGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0040D9"/>
+      <stop offset="26%" stop-color="#0A55F0"/>
+      <stop offset="52%" stop-color="#0136C2"/>
+      <stop offset="68%" stop-color="#011B68"/>
+      <stop offset="100%" stop-color="#0136C2"/>
+    </linearGradient>
+    <linearGradient id="zEdge" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#66FDFD"/>
+      <stop offset="25%" stop-color="#00CCFD"/>
+      <stop offset="60%" stop-color="#00F9FE"/>
+      <stop offset="100%" stop-color="#66FDFD"/>
+    </linearGradient>
+    <linearGradient id="wordGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7BE7FF"/>
+      <stop offset="30%" stop-color="#00CCFD"/>
+      <stop offset="65%" stop-color="#0262E1"/>
+      <stop offset="100%" stop-color="#00F9FE"/>
+    </linearGradient>
+    <linearGradient id="orbitGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F9FE"/>
+      <stop offset="50%" stop-color="#00CCFD"/>
+      <stop offset="100%" stop-color="#0262E1"/>
+    </linearGradient>
+    <linearGradient id="bubbleGradA" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D5EFF"/>
+      <stop offset="100%" stop-color="#00CCFD"/>
+    </linearGradient>
+    <linearGradient id="bubbleGradB" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0136C2"/>
+      <stop offset="100%" stop-color="#0A55F0"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="52%" r="50%">
+      <stop offset="0%" stop-color="#00F9FE" stop-opacity="0.55"/>
+      <stop offset="35%" stop-color="#00CCFD" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#011B68" flood-opacity="0.9"/>
+    </filter>
+    <filter id="wordGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00CCFD" flood-opacity="0.9"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 14 7 L 0 14 z" fill="#66FDFD"/>
+    </marker>
+  </defs>
+
+  <rect width="1024" height="1536" fill="#000000"/>
+
+  <g opacity="0.82">
+    <ellipse cx="498" cy="745" rx="360" ry="420" fill="url(#halo)"/>
+  </g>
+
+  <g id="orbit-swooshes" stroke-linecap="round" fill="none">
+    <path d="M 120 760 A 250 230 0 0 1 425 620" stroke="url(#orbitGrad)" stroke-width="8" opacity="0.9" filter="url(#glow)"/>
+    <path d="M 112 760 A 260 260 0 0 1 415 618" stroke="#00F9FE" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 620 432 A 180 182 0 0 1 860 700" stroke="url(#orbitGrad)" stroke-width="7" opacity="0.9" filter="url(#glow)"/>
+    <path d="M 618 428 A 185 188 0 0 1 854 708" stroke="#00F9FE" stroke-width="2.3" opacity="0.9"/>
+  </g>
+
+  <g id="z-ribbon" filter="url(#shadow)">
+    <path d="M 180 440 L 820 440 L 255 1012 L 800 1012" stroke="#011B68" stroke-width="185" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/>
+    <path d="M 180 440 L 820 440 L 255 1012 L 800 1012" stroke="url(#zGrad)" stroke-width="165" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.98"/>
+    <path d="M 180 440 L 820 440 L 255 1012 L 800 1012" stroke="url(#zEdge)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+    <path d="M 180 440 L 820 440" stroke="#8DEEFF" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 255 1012 L 800 1012" stroke="#8DEEFF" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 800 1012 L 255 1012" stroke="#66FDFD" stroke-width="6" opacity="0.75"/>
+    <path d="M 180 440 L 820 440" stroke="#66FDFD" stroke-width="5" opacity="0.7"/>
+  </g>
+
+  <g id="translation-cluster" font-family="Arial, sans-serif">
+    <g id="microphone" transform="translate(0 0)" filter="url(#softGlow)">
+      <rect x="379" y="670" width="96" height="118" rx="38" fill="#00CCFD"/>
+      <rect x="396" y="785" width="60" height="80" rx="20" fill="#00CCFD"/>
+      <rect x="365" y="846" width="123" height="28" rx="14" fill="#0262E1"/>
+      <rect x="335" y="872" width="185" height="26" rx="13" fill="#0136C2"/>
+      <path d="M 442 770 C 470 788, 488 814, 486 846" stroke="#66FDFD" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.9"/>
+      <path d="M 365 765 C 337 782, 320 805, 320 840" stroke="#00F9FE" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.85"/>
+    </g>
+
+    <g id="sound-waves" stroke="#66FDFD" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M 295 705 C 245 740, 240 795, 290 833"/>
+      <path d="M 292 685 C 218 725, 208 812, 286 864"/>
+      <path d="M 539 705 C 588 741, 595 795, 545 833"/>
+      <path d="M 543 685 C 618 724, 628 812, 550 865"/>
+    </g>
+
+    <g id="a-bubble" filter="url(#glow)">
+      <circle cx="320" cy="550" r="56" fill="url(#bubbleGradA)" opacity="0.9"/>
+      <circle cx="320" cy="550" r="44" fill="none" stroke="#66FDFD" stroke-width="5"/>
+      <text x="320" y="570" font-size="46" font-weight="800" fill="#F3FFFF" text-anchor="middle" dominant-baseline="middle">A</text>
+    </g>
+
+    <g id="wen-bubble" filter="url(#glow)">
+      <circle cx="590" cy="840" r="56" fill="url(#bubbleGradB)" opacity="0.93"/>
+      <circle cx="590" cy="840" r="44" fill="none" stroke="#66FDFD" stroke-width="5"/>
+      <text x="590" y="852" font-size="38" font-weight="800" fill="#F3FFFF" text-anchor="middle" dominant-baseline="middle">文</text>
+    </g>
+
+    <g id="translation-arrows" stroke="#66FDFD" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)">
+      <path d="M 500 620 C 445 560, 380 563, 320 590" opacity="0.95"/>
+      <path d="M 330 872 C 410 936, 500 934, 590 875" opacity="0.95"/>
+    </g>
+  </g>
+
+  <g id="wordmark" filter="url(#wordGlow)">
+    <text x="665" y="1015" font-size="126" font-weight="800" letter-spacing="1.2" fill="url(#wordGrad)" transform="rotate(-27 760 840)" font-family="'Segoe UI', 'Arial', sans-serif">lingua</text>
+    <text x="673" y="1010" font-size="126" font-weight="800" letter-spacing="1.2" fill="rgba(0,0,0,0)" stroke="#00F9FE" stroke-opacity="0.35" stroke-width="2" transform="rotate(-27 760 840)" font-family="'Segoe UI', 'Arial', sans-serif">lingua</text>
+  </g>
+</svg>
