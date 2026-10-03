@@ -1,0 +1,79 @@
+================================================================================
+ZEND LINGUA - PRODUCT & DESIGN REQUIREMENTS
+================================================================================
+
+APP NAME: Zend Lingua
+
+PURPOSE:
+Multilingual translation and two-way live voice interpretation.
+Mobile-first web app with foundation for future Android/Capacitor packaging.
+
+CORE WORKFLOW:
+- Person A speaks language A
+  → Speech Recognition (future API)
+  → Translation (future API)
+  → Person B hears translated language through phone, headphones, or Bluetooth earbuds
+- Reverse direction fully supported by app design
+
+PRIORITY LANGUAGES:
+English, French, Arabic, Mandarin Chinese, Japanese, Russian, Spanish, Portuguese,
+German, Italian, Korean, Hindi, Turkish, plus structure for additional major languages.
+
+CORE UI COMPONENTS:
+✓ Zend Lingua branding/logo (official uploaded PNG)
+✓ Source language selector
+✓ Target language selector
+✓ Swap language button
+✓ Large microphone button
+✓ Voice/conversation area
+✓ Text translation area
+✓ Speaker/replay control
+✓ Copy control
+✓ Clear control
+✓ Conversation/history area
+✓ Settings entry point
+✓ Privacy entry point
+
+DESIGN SPECIFICATIONS:
+- Pure black background (#000000)
+- Electric blue/cyan neon accents (#00E5FF, #00BCD4, #1976D2)
+- Premium modern appearance
+- Official logo: file_000000008d2481f4b8876d03256eafd8.png (512×512 RGBA PNG)
+- Logo must remain unchanged, unaltered, uncropped, unrecolored
+- Logo remains visually clear on black background
+- Mobile-first responsive design
+- Consistent spacing and typography
+
+TECHNICAL STACK:
+- React 18+ with TypeScript
+- Vite as build tool
+- Mobile-first responsive design
+- No external APIs connected (prepared for future integration)
+- No exposed API keys
+- No fake translations
+- No secret recording mechanisms
+
+API INTEGRATION NOTES:
+Following components will integrate with external APIs in future phases:
+- Speech-to-Text API (e.g., Web Speech API, Google Cloud Speech-to-Text)
+- Translation API (e.g., Google Cloud Translation, Azure Translator)
+- Text-to-Speech API (e.g., Web Speech Synthesis, Google Cloud Text-to-Speech)
+
+All API integration points are clearly marked as [FUTURE API] in codebase.
+
+SECURITY & PRIVACY:
+- No audio recording without explicit user permission
+- No API keys exposed in client code
+- Privacy policy accessible from main UI
+- Settings allow user control over features
+- All data flow remains client-side until APIs are connected
+
+VERSION: 1.0.0-foundation
+STATUS: Initial UI foundation - no live translation yet
+
+SEPARATION REQUIREMENT:
+Zend Lingua must remain completely separate from Zend Money.
+No code, assets, or functionality shared between projects.
+Official branding remains: Zend Lingua for this project.
+
+================================================================================
