@@ -1,0 +1,3 @@
+[functions.elevenlabs-tts]
+verify_jwt = true
+entrypoint = "./functions/elevenlabs-tts/index.ts"
