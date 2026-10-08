@@ -6,7 +6,7 @@ const corsHeaders = {
 
 const ELEVENLABS_API_URL = "https://api.elevenlabs.io/v1/text-to-speech";
 
-const DEFAULT_VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
+const DEFAULT_VOICE_ID = "pqHfZKP75CvOlQylNhV4";
 const DEFAULT_MODEL_ID = "eleven_multilingual_v2";
 
 Deno.serve(async (req: Request) => {
